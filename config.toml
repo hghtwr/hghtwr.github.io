@@ -1,0 +1,58 @@
+baseurl = "https://hghtwr.github.io"
+languageCode = "en"
+title = "Johannes Sonner (Hightower)"
+theme = "hugo-coder"
+paginate = 20
+defaultContentLanguage = "en"
+enableEmoji = true
+enableGitInfo = true
+
+[params]
+author = "Johannes Sonner"
+description = 'It's me.'
+avatarURL = "images/avatar.jpg"
+keywords = ""
+colorScheme = "auto"
+hideColorSchemeToggle = false
+maxSeeAlsoItems = 5
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[languages.en]
+languageName = ":us:"
+
+[[languages.en.menu.main]]
+name = "Blog"
+weight = 1
+url = "posts/"
+
+[[languages.en.menu.main]]
+name = "About"
+weight = 3
+url = "/pages/about-me/"
+
+[[params.social]]
+name = "E-mail"
+icon = "fa fa-2x fa-envelope"
+weight = 0
+url = "mailto:johannes.sonner@outlook.com"
+
+[[params.social]]
+name = "Github"
+icon = "fa fa-2x fa-github"
+weight = 1
+url = "https://github.com/hghtwr/"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "fa fa-2x fa-linkedin"
+weight = 3
+url = "https://www.linkedin.com/in/johannes-sonner-094161265/"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params.googleTagManager]
+id = "G-8QE7N3YHJ3"
