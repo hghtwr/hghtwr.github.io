@@ -9,7 +9,7 @@ enableGitInfo = true
 
 [params]
 author = "Johannes Sonner"
-description = 'It\'s me.'
+description = 'Its me.'
 avatarURL = "images/avatar.jpg"
 keywords = ""
 colorScheme = "auto"
