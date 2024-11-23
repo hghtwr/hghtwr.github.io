@@ -7,6 +7,7 @@ slug: kargo-filling-the-gap
 GitOps sounds too good to be true. The idea of syncing the state of your systems and applications from a single source of truth in Git feels so natural and intuitive. GitOps offers many advantages, like having a versioned track record of your application. However, as great as this sounds, it's only part of the picture.
 
 In this article, I’ll take you on my journey to discover the missing piece in GitOps and explore a tool that might fill the gap: **Kargo**. I’ll describe how I investigated Kargo and how something initially abstract and hard to grasp turned into a tool that left me with great conclusions.
+
 ## The Missing Piece
 
 But first, about the problem. GitOps tooling has matured, and the choice of tools often depends on convenience and user needs rather than functionality. A classic GitOps setup might look like the diagram below: you have two repositories—one for your application code and CI configurations, and another for your application manifests (or templates to generate them). A GitOps operator (like ArgoCD) ensures that the cluster's state is synchronized with the desired state defined in your repository.
@@ -215,23 +216,29 @@ Each `AnalysisTemplate` can be referenced in different stages of your deployment
 
 Looking at this, you will be able to run **any** test for the deployments you made. Literally **any**. This is a great implementation to enable similar testing functionality as you get from linear pipelines in different stages. 
 
-## Noice!
+## What I particularly liked!
+
 ### K8s native
 Kargo uses custom resources to realize all it's functionality. This is a pretty big plus because it fits very well into a K8s and operator-centric world we try to build. 
+
 ### User Interface
 The user interface is simple and lightweight. It does what it needs to do and makes very clear what is deployed and what's the history of your `Freight`. While I personally don't really need a user interface, I can see the potential value for our developers in it, getting a quick overview about their delivery lifecycle.
+
 ### Cluster Separation
 If you are using an approach in which you have a management cluster and target clusters to run your actual workloads on, Kargo will integrate into this concept surprisingly well. The fact that all custom resources created by Kargo are applied and processed on your management cluster makes you completly independent of your target clusters. 
+
 ### Rendered Manifests
 Kargo heavily features the rendered manifests approach. This means that the manifests of your sources are rendered and then committed into a branch or folder where your GitOps Operator fetches them. This brings additional benefits as small changes, e.g. in the version of a chart can lead to massive changes in the rendered manifests. Using this approach a Pull Request will always show you the **actual** impact of a change.
+
 ### ArgoCD & Rollouts Integration
 Kargo perfectly fits the spot between your delivery artifacts and GitOps. I particularly liked that it **doesn't try to reinvent the wheel.** It implements very well into existing solutions & workflows. Offering a simple ArgoCD sync mechanism is the perfect solution. The analysis capabilities of ArgoRollouts were not just reused but I also found that the verification steps in Kargo would respect the time it takes ArgoRollouts to deploy a full set of changes when using a step-wise deployment (e.g. canary). Perfect!
+
 ### Community/Maintainers
 For a couple of questions and issues I had to reach out to Kargo on Github. The speed in which I was getting helped with my issues was astonishing. It took maximum a few hours to get a helpful answer from the maintainers about my issues.
 ### Installation
 Kargo is quite straight-forward to install. You can find the instructions in their documentation but it comes down to installing a helm chart. Similarly to related software like ArgoCD, the quality of the helm chart seems to be high, leaving almost nothing to wish for. 
-## Conclusion
 
+## Conclusion
 Kargo has released version 1.0 a few weeks ago. It's amazing what this product already offers. When we started building a new platform based on GitOps principles with a huge number of developers in mind, I had no idea how to solve the problem of securely promoting artifacts. Kargo brings **a lot** of good ideas and a surprising amount of implemented features even in version 1.0. Yes, the documentation is blurry and yes, there might be the one bug or the other. But for me, I see vast potential in this solution to solve a problem in a way I couldn't have imagined before. 
 
 During my poc, I found myself thinking "Yes but I can still do this with tags in Git", until I tested the verification functionality. For me this seems to really solve a substantial problem with GitOps. Being able to verify your promoted resources right away, automatically without triggering some external system and Kargo keeping track of the results and even visualizing it for me is... 
