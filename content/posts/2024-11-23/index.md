@@ -170,12 +170,14 @@ spec:
 ```
 
 Having selected the _uat-tags_ `Stage`, I'm no longer able to promote any arbitrary `Freight` but I have to select one that has been successfully deployed to _teststable-tags_ before.
-![[Pasted image 20241122233427.png]]
+
+![Promotion UI](ui-promotion.png)
 Once I started the `Promotion` of a my `Freight` you can see what the PromotionTemplate from the `Stage` does. It creates a certain number of steps that will be executed and result in a Pull Request with the actual changes being created. 
 
 ![Stage Steps](stage-steps.png)
 ![Pull Request](pull-request.png)
 Once the PR is merged, ArgoCD will take care to deploy the newest version of my release as usual and Kargo wills start the `AnalysisRun`. 
+
 ### AnalysisTemplates are the key 
 Kargo reuses the `AnalysisTemplate` resource of Argo Rollouts. This means, you must have the Argo Rollouts Operator installed on your cluster. It's a small price for the flexibility it offers you. Using `AnalysisTemplate`, you can choose from 11 predefined metrics providers to base your tests on, including arbitrary Kubernetes Jobs. 
 
