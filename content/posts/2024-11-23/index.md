@@ -1,3 +1,9 @@
+---
+date: 2024-11-23
+title: "Kargo? Filling the gap!"
+slug: kargo-filling-the-gap
+---
+
 GitOps sounds too good to be true. The idea of syncing the state of your systems and applications from a single source of truth in Git feels so natural and intuitive. GitOps offers many advantages, like having a versioned track record of your application. However, as great as this sounds, it's only part of the picture.
 
 In this article, I’ll take you on my journey to discover the missing piece in GitOps and explore a tool that might fill the gap: **Kargo**. I’ll describe how I investigated Kargo and how something initially abstract and hard to grasp turned into a tool that left me with great conclusions.
