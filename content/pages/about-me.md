@@ -4,7 +4,7 @@ date: 2024-11-23
 About Me
 ========
 
-I'm Johannes, a platform engineer.
+I'm Johannes, a platform engineer and human.
 
 If you think about software developers as factory workers building a car, I'm the one building the factory. I develop the necessary tools the developer need, put different combinations of these tools together, make sure they know where the tools are and how to use them. Blueprints I create help the developers to create new factory lines quickly and with the press of a button. I also make sure the factory doesn't burn down, keeps running and is secure.
 
