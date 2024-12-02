@@ -53,7 +53,7 @@ url = "https://www.linkedin.com/in/johannes-sonner-094161265/"
 
 [[params.social]]
 name = "Bluesky"
-icon = "fa fa-2x fa-bluesky"
+icon = "fa-brands fa-2x fa-bluesky"
 weight = 3
 url = "https://bsky.app/profile/hghtwr.bsky.social/"
 
