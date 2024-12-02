@@ -51,6 +51,13 @@ icon = "fa fa-2x fa-linkedin"
 weight = 3
 url = "https://www.linkedin.com/in/johannes-sonner-094161265/"
 
+[[params.social]]
+name = "Bluesky"
+icon = "fa fa-2x fa-bluesky"
+weight = 3
+url = "https://bsky.app/profile/hghtwr.bsky.social/"
+
+
 [markup.goldmark.renderer]
 unsafe = true
 
