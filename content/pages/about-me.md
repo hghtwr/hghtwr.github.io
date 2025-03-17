@@ -12,6 +12,5 @@ Obviously, nothing great has ever been achieved alone. That's why I dedicate a l
 Diving into interesting aspects of remote work, behavioral aspects and how to make work better keeps me going.
 
 I work from home and like solving problems makes me forgot the time. Thankfully, my furry friend reminds me regularly to take him out for a walk.
-I love to play music and do sports, love waking up fresh & rested but hate to go to sleep and I enjoy being busy more than doing nothing.
 
 You can read more about me in my [ManualOfMe](https://my.manualof.me/s/a00581f8ef3c6a45b1ad40d3f860d668).
