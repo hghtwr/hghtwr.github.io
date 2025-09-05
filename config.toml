@@ -60,6 +60,3 @@ url = "https://bsky.app/profile/hghtwr.bsky.social/"
 
 [markup.goldmark.renderer]
 unsafe = true
-
-[params.googleTagManager]
-id = "G-8QE7N3YHJ3"
