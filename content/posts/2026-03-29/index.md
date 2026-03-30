@@ -1,5 +1,5 @@
 ---
-date: 2024-11-23
+date: 2026-03-29
 title: "Good, I'll hate those next few years, I guess..."
 slug: thoughts-about-ai
 description: "Just a couple of thoughts on this thing..."
