@@ -2,6 +2,8 @@
 date: 2024-11-23
 title: "Kargo? Filling the gap!"
 slug: kargo-filling-the-gap
+description: "Exploring Kargo as the missing piece in GitOps for safe, visible application promotion across environments."
+
 ---
 
 GitOps sounds too good to be true. The idea of syncing the state of your systems and applications from a single source of truth in Git feels so natural and intuitive. GitOps offers many advantages, like having a versioned track record of your application. However, as great as this sounds, it's only part of the picture.

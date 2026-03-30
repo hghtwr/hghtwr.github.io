@@ -2,19 +2,23 @@ baseurl = "https://hghtwr.github.io"
 languageCode = "en"
 title = "Johannes Sonner (Hightower)"
 theme = "hugo-coder"
-paginate = 20
 defaultContentLanguage = "en"
 enableEmoji = true
 enableGitInfo = true
 
+[pagination]
+pagerSize = 20
+
 [params]
 author = "Johannes Sonner"
-description = 'Its me.'
+description = 'Building platforms, automating infrastructure, leading teams.'
 avatarURL = "images/avatar.jpg"
 keywords = ""
 colorScheme = "auto"
 hideColorSchemeToggle = false
 maxSeeAlsoItems = 5
+mainSections = ["posts"]
+customCSS = ["css/custom.css"]
 
 [taxonomies]
 tag = "tags"

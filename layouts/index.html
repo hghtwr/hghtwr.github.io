@@ -1,0 +1,35 @@
+{{ define "content" }}
+<div class="homepage-wrapper">
+  <section class="container centered">
+    <div class="about">
+      {{ partialCached "home/avatar.html" . }}
+      {{ partialCached "home/author.html" . }}
+      {{ partialCached "home/social.html" . }}
+    </div>
+  </section>
+
+  <section class="posts-section">
+    <h2>Recent Posts</h2>
+    <div class="posts-list">
+      {{ range first 10 (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+        <article class="post-item">
+          <a href="{{ .RelPermalink }}" class="post-link">
+            <h3 class="post-title">{{ .Title }}</h3>
+            {{ with .Description }}
+              <p class="post-summary">{{ . }}</p>
+            {{ else }}
+              <p class="post-summary">{{ .Summary | plainify | truncate 120 }}</p>
+            {{ end }}
+            <div class="post-meta">
+              <time datetime="{{ .Date.Format "2006-01-02" }}" class="post-date">
+                {{ .Date.Format "January 2, 2006" }}
+              </time>
+              <span class="post-reading-time">· {{ .ReadingTime }} min read</span>
+            </div>
+
+        </article>
+      {{ end }}
+    </div>
+  </section>
+</div>
+{{ end }}

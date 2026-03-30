@@ -2,6 +2,7 @@
 date: 2024-03-26
 title: "Minecraft Server on AWS ECS Fargate Spot instances controlled by Telegram Bot, powered by Pulumi IaC"
 slug: minecraft-server-on-aws-ecs-fargate-spot-instances-controlled-by-telegram-bot-powered-by-pulumi-iac
+description: "Running an on-demand Minecraft server on AWS ECS Fargate Spot, controlled via Telegram and fully automated with Pulumi."
 ---
 
 ![Intro](intro.webp)
