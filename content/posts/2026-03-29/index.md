@@ -15,7 +15,7 @@ And while I think, all my players and all other players in the world, start kick
 ## War never changes...
 
 The first thing, I (probably everyone) notice is that this is nothing new.
-When I see how Software Engineers are right now lining themselves up on a spectrum of factions, I instinctively have to think about a piece in RandsInRepose I read about a while ago. It was about "Volatiles and Stables" (https://randsinrepose.com/archives/stables-and-volatiles/). 
+When I see how Software Engineers are right now lining themselves up on a spectrum of factions, I instinctively have to think about a piece in RandsInRepose I read about a while ago. It was about ["Volatiles and Stables"](https://randsinrepose.com/archives/stables-and-volatiles/). 
 We have those, who want to build software. They use AI in various degrees and the most important part is that it's getting the job done. Speed and impact is perceived as value and (not necessarily rightfully) matched to AI's skills to rapidly iterate on a proposal and implement it. 
 Their perfect scenario is running at least a couple of agents at the same time, each implementing a feature at the same time. 
 
